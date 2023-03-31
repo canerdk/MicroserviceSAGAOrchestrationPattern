@@ -31,7 +31,8 @@ IHost host = Host.CreateDefaultBuilder(args)
             }));
         });
 
-
+        //Masstransit v8 sürümü sonrasýnda bunun kullanýlmasýna gerek kalmadý.
+        //services.AddMassTransitHostedService();
 
         services.AddHostedService<Worker>();
     })

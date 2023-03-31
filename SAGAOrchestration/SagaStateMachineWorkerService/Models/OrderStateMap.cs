@@ -15,6 +15,7 @@ namespace SagaStateMachineWorkerService.Models
         {
             entity.Property(x => x.BuyerId).HasMaxLength(256);
             entity.Property(x => x.CardNumber).IsRequired();
+            entity.Property(x => x.TotalPrice).HasColumnType("decimal(18,2)");
         }
     }
 }
